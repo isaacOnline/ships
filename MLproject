@@ -1,0 +1,15 @@
+name: Ships
+
+conda_env: model_fitting_environment.yml
+
+entry_points:
+  test_time_gaps:
+    parameters:
+      time_gap: float
+      dataset_name: str
+    command: 'python tests/fit_and_evaluate_model.py {time_gap} {dataset_name}'
+  create_data:
+    parameters:
+      time_gap: float
+      dataset_name: str
+    command: 'python tests/create_data.py {time_gap} {dataset_name}'
