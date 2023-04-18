@@ -93,7 +93,7 @@ class Seq2SeqRNNAttentionRunner(ModelRunner):
         common_prediction_time = 60
         hour_idxs = [int((h - common_prediction_time) / args.time) - 1 for h in [120, 180, 240]]
 
-        Y_hats = [output_text[:, i, lat_lon_idxs] for i in hour_idxs]
+        Y_hats = [predicted_lat_long[:, i, lat_lon_idxs] for i in hour_idxs]
         hour_haversine_distances = [haversine_distances[i] for i in hour_idxs]
         mean_hour_haversine_distances = [mean_haversine_distances[i] for i in hour_idxs]
         return Y_hats, hour_haversine_distances, mean_hour_haversine_distances
