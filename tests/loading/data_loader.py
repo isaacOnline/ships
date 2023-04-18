@@ -13,7 +13,7 @@ from loading.disk_array import DiskArray
 
 class ProcessingError(Exception):
     """
-    Error that occured due to preprocessing
+    Error that occurwed due to preprocessing
     """
     pass
 
