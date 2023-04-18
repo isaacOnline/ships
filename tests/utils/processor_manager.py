@@ -76,7 +76,8 @@ class ProcessorManager():
         :return: None
         """
         self._load()
-        self['in_use'] = self['in_use'][:-1]
+        if len(self['in_use']) > 0:
+            self['in_use'] = self['in_use'][:-1]
         self._save()
 
     def _remove_all(self):
