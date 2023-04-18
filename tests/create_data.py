@@ -1,7 +1,8 @@
 # Script for performing the final preprocessing steps for a model, and saving the dataset to disk
 # Useful if you want to perform all the preprocessing at once - which may be necessary as some of the
 # datasets have large memory requirements, so shouldn't be processed in unison, which can happen
-# if the datasets are calculated on the fly.
+# if the datasets are calculated on the fly. The downside is that many of the datasets are huge, so
+# it's difficult to store them on the same disk at once, if you don't have multiple free TB for storage
 
 import sys
 import os
