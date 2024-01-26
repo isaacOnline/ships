@@ -1,4 +1,6 @@
-# Vessel Trajectory Prediction
+# Vessel trajectory prediction with recurrent neural networks: An evaluation of datasets, features, and architectures
+
+Official implementation of the Journal of Ocean Engineering and Science paper. Please create an issue and tag me (@isaacOnline) if you have any questions.
 
 ## Repository Overview
 This repository repository contains code for downloading and processing AIS and weather data, as well as for fitting 
